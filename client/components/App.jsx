@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
+import Footer from "./Footer";
+import ImageButton from "./ImageButton";
+import ImagePage from "./ImagePage";
+import LoadingBar from "./LoadingBar";
 
 class App extends Component {
   constructor(props) {
@@ -10,13 +13,13 @@ class App extends Component {
   }
   render() {
     return (
-      <Router>
-        <Route path="/" component={Header} />
-        <Route path="/" component={Footer} />
-        <div className="content">
-          <p>add content paths here</p>
-        </div>
-      </Router>
+      <React.Fragment>
+        <Header />
+        <ImageButton />
+        <ImagePage />
+        <LoadingBar />
+        <Footer />
+      </React.Fragment>
     );
   }
 }

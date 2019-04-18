@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 
-class Footer extends Component {
+class LoadingBar extends Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
   render() {
     return (
-      <React.Fragment>
-        <p>footer is here</p>
-      </React.Fragment>
-    );
+    <p>loading bar is here</p>
+      );
   }
 }
 
-export default Footer;
+export default LoadingBar;

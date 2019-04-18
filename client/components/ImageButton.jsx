@@ -1,13 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { directive } from "@babel/types";
 
 class ImageButton extends Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = {};
   }
-  render() { 
-    return (  );
+  render() {
+    return <p>image button is here</p>;
   }
 }
- 
+
 export default ImageButton;
