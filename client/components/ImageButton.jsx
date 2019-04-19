@@ -10,6 +10,8 @@ let randomNum = Math.floor(Math.random() * 10);
 //   description: "this bird has a beak"
 // };
 
+
+
 class ImageButton extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +34,9 @@ class ImageButton extends Component {
   }
 
   render() {
-    return <button onClick={this.handleClick.bind(this)}>Get Image</button>;
+    return <div className="button-container"onClick={this.handleClick.bind(this)}>
+<a href="#" className="btn"><span>Random Image</span></a>
+</div>
   }
 }
 

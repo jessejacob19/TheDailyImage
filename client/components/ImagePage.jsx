@@ -9,14 +9,14 @@ class ImagePage extends Component {
   render() {
     console.log(1111, this.props);
     return (
-      <React.Fragment>
+      <div className="image">
         <img
           src={this.props.imageData.imageLink}
           height={this.props.imageData.height}
           width={this.props.imageData.width}
           alt=""
         />
-      </React.Fragment>
+      </div>
     );
   }
 }

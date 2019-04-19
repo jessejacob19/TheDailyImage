@@ -6,16 +6,13 @@ import ImageButton from "./ImageButton";
 import ImagePage from "./ImagePage";
 import LoadingBar from "./LoadingBar";
 
-import { getPictures } from "../api"
+import { getPictures } from "../api";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
-      api: {
-       
-      },
+      api: {},
       loading: false
     };
   }
@@ -24,10 +21,9 @@ class App extends Component {
       api: {
         imageLink,
         width,
-        height,
-      
+        height
       },
-      loading:false
+      loading: false
     });
   }
 
@@ -35,26 +31,21 @@ class App extends Component {
     this.setState({ loading: true });
   }
 
-  
-  
- 
-   
-  
   render() {
     console.log(this.state);
     return (
       <React.Fragment>
         <Header />
-        <ImageButton onButton={this.updateImageState.bind(this)} onLoading={this.showLoadingBar.bind(this)} />
-        { this.state.api.imageLink && <ImagePage imageData={this.state.api} />}
+        <ImageButton
+          onButton={this.updateImageState.bind(this)}
+          onLoading={this.showLoadingBar.bind(this)}
+        />
+        {this.state.api.imageLink && <ImagePage imageData={this.state.api} />}
         {this.state.loading && <LoadingBar />}
-        <Footer />
+        {this.state.api.imageLink && <Footer />}
       </React.Fragment>
-
-    )
-
+    );
   }
 }
-
 
 export default App;

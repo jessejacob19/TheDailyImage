@@ -5,9 +5,11 @@ class Header extends Component {
     super(props);
     this.state = {};
   }
-  render() {
-    return <p>header is here</p>;
+    render() {
+      return <div className="logo">
+      <a href="/">The<br></br>Daily Image</a>
+    </div>
+    }
   }
-}
 
 export default Header;
