@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { directive } from '@babel/types';
+import { directive } from "@babel/types";
 
 class ImagePage extends Component {
   constructor(props) {
@@ -7,9 +7,17 @@ class ImagePage extends Component {
     this.state = {};
   }
   render() {
-    return(
-    <p>imagePage is here</p>
-    ) ;
+    console.log(1111, this.props);
+    return (
+      <React.Fragment>
+        <img
+          src={this.props.imageData.imageLink}
+          height={this.props.imageData.height}
+          width={this.props.imageData.width}
+          alt=""
+        />
+      </React.Fragment>
+    );
   }
 }
 
