@@ -1,2 +1,3 @@
-#The Daily Image
+**The Daily Image
+
 Click the button and see what happens
