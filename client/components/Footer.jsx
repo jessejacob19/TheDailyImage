@@ -7,9 +7,9 @@ class Footer extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <p>footer is here</p>
-      </React.Fragment>
+      <div class='footer'>
+        <p>Copyright 	&copy; 2019. Made by: Adam, Jesse, Josh, Meg, Nathan</p>
+      </div>
     );
   }
 }

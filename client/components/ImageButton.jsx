@@ -7,7 +7,9 @@ class ImageButton extends Component {
     this.state = {};
   }
   render() {
-    return <p>image button is here</p>;
+    return <div class="button-container">
+    <a href="#" class="btn"><span>Random Image</span></a>
+  </div>
   }
 }
 
