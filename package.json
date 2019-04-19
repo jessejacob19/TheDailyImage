@@ -29,8 +29,10 @@
     ]
   },
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "express": "^4.16.4",
-    "superagent": "^5.0.2"
+    "superagent": "^5.0.2",
+    "unsplash-js": "^5.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
