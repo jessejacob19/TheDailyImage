@@ -32,7 +32,15 @@ class ImageButton extends Component {
   }
 
   render() {
+<<<<<<< HEAD
+    return <div class="button-container">
+    <a href="#" class="btn"><span>Random Image</span></a>
+  </div>
+||||||| merged common ancestors
+    return <p>image button is here</p>;
+=======
     return <button onClick={this.handleClick.bind(this)}>Get Image</button>;
+>>>>>>> 8e54d5dc9c3e93454f71eaaa75372c10b0738cf5
   }
 }
 
